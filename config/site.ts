@@ -1,69 +1,41 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
+	name: "Manoranjith Shankar",
+	description: "potato",
 	navItems: [
 		{
-			label: "Home",
-			href: "/",
+			label: "About",
+			href: "#about",
 		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Projects",
+      href: "#projects",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Experience",
+      href: "#experience",
     },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
 	],
 	navMenuItems: [
 		{
-			label: "Profile",
-			href: "/profile",
+			label: "GitHub",
+			href: "https://github.com/manoranjith-shankar",
 		},
 		{
-			label: "Dashboard",
-			href: "/dashboard",
+			label: "LinkedIn",
+			href: "https://www.linkedin.com/in/manoranjith-shankar/",
 		},
 		{
-			label: "Projects",
-			href: "/projects",
+			label: "Twitter",
+			href: "https://x.com/retrxx_eth",
 		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
+		
 	],
 	links: {
-		github: "https://github.com/nextui-org/nextui",
+		github: "https://github.com/manoranjith-shankar",
 		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
 		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+    	sponsor: "https://patreon.com/jrgarciadev"
 	},
 };

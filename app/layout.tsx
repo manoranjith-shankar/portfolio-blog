@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
+import { fontCaniculeDisplay, fontMonaco, fontMono } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
 	title: {
@@ -33,12 +34,13 @@ export default function RootLayout({
 			<head />
 			<body
 				className={clsx(
-					"min-h-screen bg-background font-sans antialiased",
-					fontSans.variable
+					"min-h-screen bg-background antialiased",
+					fontMonaco.className
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-					<div className="relative flex flex-col h-screen bg-slate-50">
+					<div className="relative flex flex-col h-screen dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]">
+						<Navbar />
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
