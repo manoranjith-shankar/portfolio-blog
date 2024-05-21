@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import { CardBody, CardContainer, CardItem } from "@/components/3d-card";
 import { Button } from "@nextui-org/react";
@@ -11,7 +11,7 @@ import { GithubIcon } from "./icons";
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string;
+  image: string; // This should be the path to the GIF
   stack: string;
   liveLink: string;
   repoLink: string;
@@ -34,6 +34,19 @@ export function ProjectCard({
   liveLink,
   repoLink,
 }: ProjectCardProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Derive the static image path (assuming it's a PNG)
+  const staticImage = image.replace('.gif', '.png');
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
@@ -58,13 +71,19 @@ export function ProjectCard({
           Tech Stack: {stack}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <Image
-            src={image}
-            height="1000"
-            width="1000"
-            className="h-30 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
+          <div 
+            className="relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Image
+              src={isHovered ? image : staticImage}
+              height="1000"
+              width="1000"
+              className="h-30 w-full object-cover rounded-xl"
+              alt="thumbnail"
+            />
+          </div>
         </CardItem>
         <div className="flex justify-between items-center mt-6">
           <CardItem

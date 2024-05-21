@@ -6,13 +6,40 @@ import { ProjectCard } from './ProjectCard'
 const project1 = {
   title: "OriginX - NFT Raffler",
   description: "dApp to let users raffle for a charitable cause using high stake NFTs (ERC 721) and win fractional tokens as a reward.",
-  stack: "ReactJs, JavaScript, Solidity, EthersJs, ChainLink VRF",
+  stack: "ReactJs, NodeJs, JavaScript, Solidity, EthersJs, ChainLink VRF",
   image: "/originx-landing-page.png",
   liveLink: "https://origin-x-nft-raffler.vercel.app/",
   repoLink: "https://github.com/manoranjith-shankar/originX-nft-raffler"
 };
 
+const project2 = {
+  title: "ProvenX - Supply Chain",
+  description: "dApp to reduce counterfeited goods in the post supply chain built on top of volary(ETH-L2) blockchain.",
+  stack: "ReactJs, NodeJs, JavaScript, Solidity, Wagmi, EthersJs, Volary",
+  image: "/test.gif",
+  liveLink: "https://drive.google.com/file/d/1EdHr4eQpcJ2bKtqojQ3ZkrHzi2XEWgzq/view?usp=sharing",
+  repoLink: "https://github.com/manoranjith-shankar/hack-a-nest"
+};
+
+const project3 = {
+  title: "Non-Custodial Wallet",
+  description: "Implementation of MPC (Multi-Party Computation) to create a non-custodial wallet for different cryptos.",
+  stack: "NextJs, ReactJs, TypeScript, Solidity, MySQL, Docker, FireBlocks SDK",
+  image: "/originx-landing-page.png",
+  liveLink: "https://github.com/manoranjith-shankar/ncw-web-app?tab=readme-ov-file#proof-of-concept-demos",
+  repoLink: "https://github.com/manoranjith-shankar/ncw-web-app"
+};
+
 const project4 = {
+  title: "Roborg '23",
+  description: "Event Website for Roborg '23, a national level robotics competition hosted by the Robotics Club of SKCET, Coimbatore.",
+  stack: "Html, Css, JavaScript",
+  image: "/originx-landing-page.png",
+  liveLink: "https://roborg-website-k4soj.ondigitalocean.app/",
+  repoLink: "https://github.com/manoranjith-shankar/roborg-23"
+};
+
+const project5 = {
   title: "Credance - ZKP Credentials",
   description: "dApp to create zk proof-of-possession and credential attributes of credentials and verifying using zkSNARKS.",
   stack: "NextJs, ReactJs, Solidity, EthersJs, Zokrates(ZK-DSL)",
@@ -21,22 +48,13 @@ const project4 = {
   repoLink: "https://github.com/manoranjith-shankar/originX-nft-raffler"
 };
 
-const project3 = {
-  title: "Non-Custodial Wallet",
-  description: "Implementation of MPC (Multi-Party Computation) to create a non-custodial wallet for different cryptos.",
-  stack: "NextJs, ReactJs, TypeScript, Solidity, EthersJs, FireBlocks SDK",
+const project6 = {
+  title: "Safe Wallet",
+  description: "Safe{Wallet} – smart contract wallet for Ethereum (ex-Gnosis Safe multisig)  - Open Source Contributor",
+  stack: "NextJs, ReactJs, TypeScript, Solidity, EthersJs, Shell, Safe SDK",
   image: "/originx-landing-page.png",
-  liveLink: "https://origin-x-nft-raffler.vercel.app/",
-  repoLink: "https://github.com/manoranjith-shankar/originX-nft-raffler"
-};
-
-const project2 = {
-  title: "ProvenX - Supply Chain",
-  description: "dApp to reduce counterfeited goods in the post supply chain built on top of TOH blockchain",
-  stack: "NextJs, ReactJs, Solidity, EthersJs, Zokrates(ZK-DSL)",
-  image: "/originx-landing-page.png",
-  liveLink: "https://origin-x-nft-raffler.vercel.app/",
-  repoLink: "https://github.com/manoranjith-shankar/originX-nft-raffler"
+  liveLink: "https://app.safe.global/",
+  repoLink: "https://github.com/safe-global/safe-wallet-web"
 };
 
 const Projects = () => {
@@ -48,8 +66,10 @@ const Projects = () => {
           <ProjectCard {...project1}/>
           <ProjectCard {...project2}/>
           <ProjectCard {...project3}/>
+          <ProjectCard {...project4}/>
+          <ProjectCard {...project5}/>
+          <ProjectCard {...project6}/>
         </div>
-        {/* <ProjectCard /> */}
     </div>
   )
 }
