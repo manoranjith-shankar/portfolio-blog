@@ -2,11 +2,11 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
 import { fontCaniculeDisplay, fontMonaco, fontMono } from "@/config/fonts";
-import {Link} from "@nextui-org/react";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import { Navbar } from "@/components/navbar";
 import Script from "next/script";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
 	title: {
@@ -58,6 +58,7 @@ export default function RootLayout({
 						<Navbar />
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
+							<Analytics />
 						</main>
 						<footer>
 							<div className="container mx-auto max-w-7xl py-10 px-6 flex-grow">
