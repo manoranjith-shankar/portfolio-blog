@@ -11,7 +11,7 @@ import { GithubIcon } from "./icons";
 interface ProjectCardProps {
   title: string;
   description: string;
-  image: string; // This should be the path to the GIF
+  image: string;
   stack: string;
   liveLink: string;
   repoLink: string;
@@ -35,8 +35,6 @@ export function ProjectCard({
   repoLink,
 }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
-
-  // Derive the static image path (assuming it's a PNG)
   const staticImage = image.replace('.gif', '.png');
 
   const handleMouseEnter = () => {
@@ -71,7 +69,7 @@ export function ProjectCard({
           Tech Stack: {stack}
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
-          <div 
+          <div
             className="relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -108,6 +106,7 @@ export function ProjectCard({
             </Button>
           </CardItem>
         </div>
+        
       </CardBody>
     </CardContainer>
   );

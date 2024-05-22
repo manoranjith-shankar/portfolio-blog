@@ -2,12 +2,13 @@ import { fontCaniculeDisplay } from '@/config/fonts'
 import clsx from 'clsx'
 import React from 'react'
 import { ProjectCard } from './ProjectCard'
+import { Link } from '@nextui-org/link';
 
 const project1 = {
   title: "OriginX - NFT Raffler",
   description: "dApp to let users raffle for a charitable cause using high stake NFTs (ERC 721) and win fractional tokens as a reward.",
   stack: "ReactJs, NodeJs, JavaScript, Solidity, EthersJs, ChainLink VRF",
-  image: "/originx-landing-page.png",
+  image: "/test.gif",
   liveLink: "https://origin-x-nft-raffler.vercel.app/",
   repoLink: "https://github.com/manoranjith-shankar/originX-nft-raffler"
 };
@@ -16,7 +17,7 @@ const project2 = {
   title: "ProvenX - Supply Chain",
   description: "dApp to reduce counterfeited goods in the post supply chain built on top of volary(ETH-L2) blockchain.",
   stack: "ReactJs, NodeJs, JavaScript, Solidity, Wagmi, EthersJs, Volary",
-  image: "/test.gif",
+  image: "/originx-landing-page.png",
   liveLink: "https://drive.google.com/file/d/1EdHr4eQpcJ2bKtqojQ3ZkrHzi2XEWgzq/view?usp=sharing",
   repoLink: "https://github.com/manoranjith-shankar/hack-a-nest"
 };
@@ -69,6 +70,11 @@ const Projects = () => {
           <ProjectCard {...project4}/>
           <ProjectCard {...project5}/>
           <ProjectCard {...project6}/>
+        </div>
+        <div className="flex justify-center">
+        <Link isBlock showAnchorIcon href="https://github.com/manoranjith-shankar?tab=repositories" target='_blank' color="foreground">
+          View More Projects
+      </Link>
         </div>
     </div>
   )

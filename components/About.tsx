@@ -4,11 +4,11 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="relative grid grid-flow-row gap-4 mt-3">
+    <div className="relative grid grid-flow-row gap-4 mt-3 mb-3">
         <h1 className={clsx("max-w-10 text-center text-2xl font-bold md:text-3xl lg:text-4xl text-neutral-700 dark:text-foreground underline underline-offset-3 hover:no-underline", fontCaniculeDisplay.className)}> <span className="font-serif">#</span>About</h1>
-        <p>The name is Manoranjith Shankar, based out of hosur, india. i suppose there are 17 world wonders around us
-          yet, we only tend to see about 7 of them, because the rest are hidden in the shadows of the world. Let's find it together on this quest.
-          oh, also i have a super power, wanna know what it is? i can make you smile, just by being around you.
+        <p>
+          Hello there! I&apos;m Manoranjith Shankar, based out of Hosur, India. I&apos;m a Designer and a full Stack Developer with a passion for building secure applications. 
+            I code, break things, fix them 🔁. Oh, Just in case if you need my <a href="" target='_blank' className="no-underline hover:underline underline-offset-4">📄resume</a>.
         </p>
     </div>
   )

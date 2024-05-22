@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
 import { fontCaniculeDisplay, fontMonaco, fontMono } from "@/config/fonts";
+import {Link} from "@nextui-org/react";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import { Navbar } from "@/components/navbar";
@@ -38,12 +39,19 @@ export default function RootLayout({
 					fontMonaco.className
 				)}
 			>
-				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+				<Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
 					<div className="relative flex flex-col dark:bg-black bg-white dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2]">
 						<Navbar />
 						<main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
 							{children}
 						</main>
+						<footer>
+							<div className="container mx-auto max-w-7xl py-10 px-6 flex-grow">
+								<p className="text-center text-neutral-500 dark:text-neutral-400">
+									© No Copyrights reserved • <a href="https://github.com/manoranjith-shankar/portfolio-blog" target='_blank'>Source code</a>
+								</p>
+							</div>
+						</footer>
 					</div>
 				</Providers>
 			</body>

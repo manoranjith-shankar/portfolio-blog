@@ -20,6 +20,7 @@ import {
 	TwitterIcon,
 	GithubIcon,
 	DiscordIcon,
+	LinkedInLogo,
 } from "@/components/icons";
 import { Divider } from "@nextui-org/react";
 
@@ -59,8 +60,8 @@ export const Navbar = () => {
 					<Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
 						<TwitterIcon className="text-default-500" />
 					</Link>
-					<Link isExternal href={siteConfig.links.discord} aria-label="Discord">
-						<DiscordIcon className="text-default-500" />
+					<Link isExternal href={siteConfig.links.linkedin} aria-label="Discord">
+						<LinkedInLogo className="text-default-500" />
 					</Link>
 					<Link isExternal href={siteConfig.links.github} aria-label="Github">
 						<GithubIcon className="text-default-500" />

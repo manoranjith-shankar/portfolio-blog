@@ -13,8 +13,8 @@ export const siteConfig = {
       href: "#projects",
     },
     {
-      label: "Experience",
-      href: "#experience",
+      label: "Contact",
+      href: "#contact",
     },
 	],
 	navMenuItems: [
@@ -30,12 +30,10 @@ export const siteConfig = {
 			label: "Twitter",
 			href: "https://x.com/retrxx_eth",
 		},
-		
 	],
 	links: {
 		github: "https://github.com/manoranjith-shankar",
-		twitter: "https://twitter.com/getnextui",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    	sponsor: "https://patreon.com/jrgarciadev"
+		twitter: "https://x.com/retrxx_eth",
+		linkedin: "https://www.linkedin.com/in/manoranjith-shankar/",
 	},
 };
