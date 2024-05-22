@@ -76,9 +76,9 @@ export function ProjectCard({
           >
             <Image
               src={isHovered ? image : staticImage}
-              height="1000"
-              width="1000"
-              className="h-30 w-full object-cover rounded-xl"
+              height={300}
+              width={400}
+              className="object-cover w-full h-72 rounded-xl"
               alt="thumbnail"
             />
           </div>
