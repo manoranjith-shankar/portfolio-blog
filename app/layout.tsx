@@ -6,6 +6,7 @@ import {Link} from "@nextui-org/react";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import { Navbar } from "@/components/navbar";
+import Script from "next/script";
 
 export const metadata: Metadata = {
 	title: {
@@ -32,7 +33,20 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<head />
+			<head>
+			<Script async src="https://www.googletagmanager.com/gtag/js?id=G-5FRKS00PF2"></Script>
+			<Script id="google-analytics"> 
+				{
+					`
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', 'G-5FRKS00PF2');
+					`
+				}
+			</Script>
+			</head>
 			<body
 				className={clsx(
 					"min-h-screen bg-background antialiased",
