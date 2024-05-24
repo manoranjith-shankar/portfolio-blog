@@ -9,7 +9,7 @@ const project1 = {
   description: "dApp to let users raffle for a charitable cause using high stake NFTs (ERC 721) and win fractional tokens as a reward.",
   stack: "ReactJs, NodeJs, JavaScript, Solidity, EthersJs, ChainLink VRF",
   image: "/originx.png",
-  liveLink: "https://origin-x-nft-raffler.vercel.app/",
+  liveLink: "https://project-originx.techyy.ninja/",
   repoLink: "https://github.com/manoranjith-shankar/originX-nft-raffler"
 };
 
@@ -23,6 +23,15 @@ const project2 = {
 };
 
 const project3 = {
+  title: "Roborg '23",
+  description: "Event Website for Roborg '23, a national level robotics competition hosted by the Robotics Club of SKCET, Coimbatore.",
+  stack: "Html, Css, JavaScript",
+  image: "/roborg.png",
+  liveLink: "https://project-roborg.techyy.ninja/",
+  repoLink: "https://github.com/manoranjith-shankar/roborg-23"
+};
+
+const project4 = {
   title: "Non-Custodial Wallet",
   description: "Implementation of MPC (Multi-Party Computation) to create a non-custodial wallet for different cryptos.",
   stack: "NextJs, ReactJs, TypeScript, Solidity, MySQL, Docker, FireBlocks SDK",
@@ -31,22 +40,13 @@ const project3 = {
   repoLink: "https://github.com/manoranjith-shankar/ncw-web-app"
 };
 
-const project4 = {
-  title: "Roborg '23",
-  description: "Event Website for Roborg '23, a national level robotics competition hosted by the Robotics Club of SKCET, Coimbatore.",
-  stack: "Html, Css, JavaScript",
-  image: "/roborg.png",
-  liveLink: "https://roborg-website-k4soj.ondigitalocean.app/",
-  repoLink: "https://github.com/manoranjith-shankar/roborg-23"
-};
-
 const project5 = {
   title: "Credence - ZKP Credentials",
   description: "dApp to create zk proof-of-possession and credential attributes of credentials and verifying using zkSNARKS.",
-  stack: "NextJs, ReactJs, Solidity, EthersJs, Zokrates(ZK-DSL)",
+  stack: "NextJs, ReactJs, Solidity, EthersJs, Zokrates(DSL) [in development]",
   image: "/credence.png",
-  liveLink: "https://origin-x-nft-raffler.vercel.app/",
-  repoLink: "https://github.com/manoranjith-shankar/originX-nft-raffler"
+  liveLink: "https://github.com/manoranjith-shankar/credence",
+  repoLink: "https://github.com/manoranjith-shankar/credence"
 };
 
 const project6 = {
