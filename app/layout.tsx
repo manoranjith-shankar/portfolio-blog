@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { siteConfig } from "@/config/site";
-import { fontCaniculeDisplay, fontMonaco, fontMono } from "@/config/fonts";
+import { fontMonaco } from "@/config/fonts";
 import { Providers } from "./providers";
 import clsx from "clsx";
 import { Navbar } from "@/components/navbar";
