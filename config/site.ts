@@ -12,10 +12,6 @@ export const siteConfig = {
       label: "Projects",
       href: "#projects",
     },
-    // {
-    //   label: "Contact",
-    //   href: "#contact",
-    // },
 	],
 	navMenuItems: [
 		{
