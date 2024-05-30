@@ -13,7 +13,7 @@ const Files = ({ params }: { params: { file: string } }) => {
             delay: TIMEOUT_DELAY_LONG
         },
         resume: {
-            url: "https://drive.google.com/file/d/1jaX3A7BCnLN-3nxZ1pZZQdkPgcfC5iX7/view?usp=sharing",
+            url: "https://drive.google.com/file/d/1nvPsqD8pl3-bWc23Xb8MsVHCFdOEQ25M/view?usp=sharing",
             delay: TIMEOUT_DELAY_LONG
         },
         originxlive: {
